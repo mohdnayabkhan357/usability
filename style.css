@@ -263,3 +263,9 @@ footer{
 .col-menu a{
   color: var(--primary-text-color);
 }
+.sub-footer{
+  background-color: #577592;
+  display: flex;
+  color: white;
+  justify-content: center;
+}
