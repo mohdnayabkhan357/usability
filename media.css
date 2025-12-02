@@ -1,42 +1,54 @@
 .container{
     overflow: hidden;
 }
-.exapmle-area{
-    flex-wrap: wrap;
-
-}
 .toggle-btn{
     display: none;
 }
-@media (width <= 991px){
+.example-area{
+    flex-wrap: wrap;
+    gap: 15px;
+}
+@media (width<=991px) {
     .toggle-btn{
         display: block;
         margin-right: 20px;
         font-size: 1.5rem;
     }
-    .hover-links{
+    .hover-link{
         display: none;
     }
-    .exapmle-card{
-        width: calc(50% - 30px);
+    .example-card{
+        width: calc(50% - 15px);
     }
 }
-@media (width <= 767px){
+@media (width<=767px){
     .header-section{
         flex-direction: column-reverse;
-
     }
     .header-left{
-         width: 100%;
+        width: 100%;
     }
     .primary-btn{
         width: 100%;
+        text-align: center;
     }
-
+    .feature-col{
+        flex-direction: column;
+    }
+    #feature-rev{
+        flex-direction: column-reverse;
+    }
+    .footer-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sub-footer{
+        flex-direction: row;
+    }
 }
 @media (width <=479px){
     :root{
-        --padding-inline-section: 5px;
+        --padding-inline-section : 5px;
     }
     h1{
         font-size: 2rem;
@@ -50,6 +62,4 @@
     .feature-card{
         min-width: 100%;
     }
-
-    
 }
